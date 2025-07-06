@@ -75,7 +75,7 @@ class TorrentDownloader(VKVideoUploader):
         print(f"Torrent: {release_name}")
 
         cmd = [
-            "aria2c.exe",
+            "aria2c",
             "--seed-time=0",
             "--dir", self.output_dir,
             "--summary-interval=0",
